@@ -1,7 +1,4 @@
 import './index.css'
+import '@picocss/pico'
 
-// import {onWorksHover} from './javascript/works-hover'
-
-window.addEventListener('DOMContentLoaded', function () {
-  // onWorksHover()
-})
+window.addEventListener('DOMContentLoaded', function () {})

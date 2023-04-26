@@ -17,6 +17,7 @@
     "vite-plugin-qrcode": "^0.2.1"
   },
   "dependencies": {
+    "@picocss/pico": "^1.5.10",
     "aos": "^2.3.4"
   }
 }
