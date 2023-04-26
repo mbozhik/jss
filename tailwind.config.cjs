@@ -30,5 +30,4 @@ module.exports = {
       position: ['top', 'right'],
     },
   },
-  plugins: [require('tailwindcss-debug-screens')],
 }
