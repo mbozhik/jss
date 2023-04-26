@@ -1,4 +1,4 @@
-import './index.css'
 import '@picocss/pico'
 
-window.addEventListener('DOMContentLoaded', function () {})
+import './pico.css'
+import './index.css'

@@ -4,9 +4,6 @@ module.exports = {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      fontFamily: {
-        custom: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif'],
-      },
       colors: {
         grey: {
           100: '#f0f0f0',
@@ -29,5 +26,8 @@ module.exports = {
     debugScreens: {
       position: ['top', 'right'],
     },
+  },
+  corePlugins: {
+    preflight: false,
   },
 }
