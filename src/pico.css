@@ -4,10 +4,10 @@
 
 [data-theme='light'],
 :root:not([data-theme='dark']) {
-  --primary: #fdd835;
-  --primary-hover: #fbc02d;
-  --primary-focus: rgba(253, 216, 53, 0.125);
-  --primary-inverse: rgba(0, 0, 0, 0.75);
+  --primary: #101010;
+  --primary-hover: #232323;
+  --primary-focus: rgba(117, 117, 117, 0.5);
+  --primary-inverse: #fff;
 }
 
 @media only screen and (prefers-color-scheme: dark) {
@@ -16,6 +16,8 @@
     --primary-hover: #ffeb3b;
     --primary-focus: rgba(253, 216, 53, 0.25);
     --primary-inverse: rgba(0, 0, 0, 0.75);
+    --background-color: #101010;
+    --card-background-color: #101010;
   }
 }
 
@@ -25,11 +27,5 @@
   --primary-focus: rgba(253, 216, 53, 0.25);
   --primary-inverse: rgba(0, 0, 0, 0.75);
   --background-color: #101010;
-}
-
-:root {
-  --form-element-active-border-color: var(--primary);
-  --form-element-focus-color: var(--primary-focus);
-  --switch-color: var(--primary-inverse);
-  --switch-checked-background-color: var(--primary);
+  --card-background-color: #101010;
 }

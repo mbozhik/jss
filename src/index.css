@@ -3,3 +3,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#LOADER {
+  @apply h-[100svh];
+}
+
+[aria-busy='true'] {
+  color: var(--primary);
+}

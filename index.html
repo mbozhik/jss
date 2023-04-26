@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" class="scroll-smooth" data-theme="dark">
+<html lang="ru" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="public/favicon.ico" />
@@ -7,9 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>js</title>
   </head>
-  <body class="text-black m-5">
-    <h1>JavaScript</h1>
-    <button class="w-40" id="THEME_BTN">Toggle Theme</button>
+  <body class="text-black">
+    <article id="LOADER" class="m-0 p-0 fixed flex items-center justify-center h-screen w-screen text-white" aria-busy="true"></article>
+    <main class="container p-5">
+      <h2>JavaScript</h2>
+      <div class="flex gap-5">
+        <button class="w-max" id="THEME_BTN">Toggle Theme</button>
+        <button class="outline w-max" id="MODAL_BTN">Launch demo modal</button>
+      </div>
+
+      <dialog id="MODAL">
+        <article>
+          <a href="#close" aria-label="Close" class="close"></a>
+          <h3>Confirm your action!</h3>
+          <p>Cras sit amet maximus risus. Pellentesque sodales odio sit amet augue finibus pellentesque. Nullam finibus risus non semper euismod.</p>
+          <footer>
+            <a href="#cancel" role="button" class="secondary">Cancel</a>
+            <a href="#confirm" role="button">Confirm</a>
+          </footer>
+        </article>
+      </dialog>
+    </main>
     <script type="module" src="/src/index.js"></script>
   </body>
 </html>
