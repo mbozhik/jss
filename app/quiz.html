@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>How good are you at Javascript? — Quiz</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  </head>
+  <body class="quiz">
+    <div class="header">
+      <a href="../">
+        <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="svgg">
+            <rect id="border" x="1" y="1.75" width="38" height="38" stroke="black" stroke-width="2" />
+            <path
+              id="text"
+              d="M16.9896 19.7299H19.9131V31.1698C19.9078 32.2185 19.6854 33.1215 19.2458 33.8788C18.8062 34.6309 18.1918 35.2109 17.4027 35.6187C16.6188 36.0212 15.7052 36.2224 14.6619 36.2224C13.7085 36.2224 12.8505 36.053 12.0879 35.714C11.3305 35.3697 10.7294 34.8613 10.2845 34.1887C9.83961 33.5161 9.61716 32.6792 9.61716 31.6782H12.5486C12.5539 32.1178 12.6493 32.4965 12.8346 32.8143C13.0253 33.1321 13.2875 33.3757 13.6211 33.5452C13.9548 33.7147 14.3388 33.7994 14.7731 33.7994C15.2444 33.7994 15.6443 33.7014 15.9727 33.5055C16.3011 33.3042 16.55 33.0076 16.7195 32.6157C16.8942 32.2238 16.9843 31.7418 16.9896 31.1698V19.7299ZM31.9528 24.2026C31.8787 23.5088 31.5662 22.9685 31.0154 22.5819C30.4699 22.1953 29.7602 22.002 28.8863 22.002C28.2719 22.002 27.745 22.0947 27.3054 22.28C26.8658 22.4654 26.5295 22.717 26.2964 23.0347C26.0634 23.3525 25.9442 23.7153 25.9389 24.1231C25.9389 24.4621 26.0157 24.756 26.1693 25.005C26.3282 25.2539 26.5427 25.4657 26.8128 25.6405C27.0829 25.81 27.3822 25.953 27.7105 26.0695C28.0389 26.186 28.3699 26.284 28.7036 26.3634L30.2289 26.7448C30.8433 26.8878 31.4338 27.0811 32.0005 27.3247C32.5725 27.5683 33.0836 27.8755 33.5338 28.2463C33.9893 28.617 34.3494 29.0645 34.6142 29.5889C34.879 30.1132 35.0114 30.7276 35.0114 31.432C35.0114 32.3853 34.7678 33.2248 34.2806 33.9503C33.7933 34.6706 33.0889 35.2347 32.1673 35.6425C31.2511 36.045 30.1415 36.2463 28.8386 36.2463C27.5728 36.2463 26.4739 36.0503 25.5417 35.6584C24.6149 35.2665 23.8893 34.6945 23.3649 33.9424C22.8459 33.1903 22.5652 32.2741 22.5228 31.1936H25.4225C25.4649 31.7603 25.6397 32.2317 25.9469 32.6077C26.2541 32.9838 26.6539 33.2645 27.1465 33.4498C27.6443 33.6352 28.2004 33.7279 28.8148 33.7279C29.4557 33.7279 30.0171 33.6326 30.499 33.4419C30.9863 33.2459 31.3676 32.9758 31.643 32.6316C31.9184 32.282 32.0588 31.8742 32.0641 31.4081C32.0588 30.9844 31.9343 30.6349 31.6907 30.3595C31.447 30.0788 31.1054 29.8457 30.6658 29.6604C30.2316 29.4697 29.7231 29.3002 29.1405 29.1519L27.2895 28.6753C25.9495 28.331 24.8903 27.8093 24.1117 27.1102C23.3385 26.4058 22.9518 25.471 22.9518 24.3058C22.9518 23.3472 23.2114 22.5078 23.7304 21.7875C24.2547 21.0672 24.9671 20.5084 25.8674 20.1112C26.7678 19.7087 27.7873 19.5074 28.926 19.5074C30.0806 19.5074 31.0922 19.7087 31.9608 20.1112C32.8347 20.5084 33.5205 21.0619 34.0184 21.7716C34.5162 22.476 34.7731 23.2863 34.789 24.2026H31.9528Z"
+              fill="black"
+            />
+          </g>
+        </svg>
+      </a>
+      <a target="_blank" href="https://github.com/bozzhik/js/blob/main/src/javascript/quiz.js">View code</a>
+    </div>
+    <div class="wrapper">
+      <div class="title">
+        <h1 id="caption"><span> How good are you at</span> JS?</h1>
+        <h2 id="description">
+          Answer all the questions to understand if you know js well or yes.<br />
+          The questions were created using <span>Chat-GPT</span>!
+        </h2>
+        <div class="buttons">
+          <button id="start" class="outlined">Start</button>
+        </div>
+      </div>
+      <div id="quiz"></div>
+      <button id="verify" class="outlined">Verify</button>
+      <button id="restart" class="outlined">Try again</button>
+    </div>
+    <script src="../javascript/quiz.js"></script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      ;(function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            ;(m[i].a = m[i].a || []).push(arguments)
+          }
+        m[i].l = 1 * new Date()
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return
+          }
+        }
+        ;(k = e.createElement(t)), (a = e.getElementsByTagName(t)[0]), (k.async = 1), (k.src = r), a.parentNode.insertBefore(k, a)
+      })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym')
+
+      ym(92306842, 'init', {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true
+      })
+    </script>
+    <noscript
+      ><div><img src="https://mc.yandex.ru/watch/92306842" style="position: absolute; left: -9999px" alt="" /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
+  </body>
+</html>

@@ -8,10 +8,43 @@
   @apply h-[100svh];
 }
 
+b,
 [aria-busy='true'] {
   color: var(--primary);
 }
 
-span {
+.GITHUB_LOGO {
+  fill: var(--primary);
+}
+
+.ITEMS_GRID {
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+@media screen and (max-width: 1366px) {
+  .ITEMS_GRID {
+    column-gap: 5rem;
+    row-gap: 5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ITEMS_GRID {
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+}
+
+a {
+  color: var(--border);
+  text-decoration-style: none;
+}
+
+.ITEM:hover {
+  border-color: var(--primary);
+}
+
+.ITEM h1 {
   color: var(--primary);
 }

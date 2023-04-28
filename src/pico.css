@@ -9,18 +9,7 @@
   --primary-focus: rgba(117, 117, 117, 0.5);
   --primary-inverse: #fff;
   --h1-color: #101010;
-}
-
-@media only screen and (prefers-color-scheme: dark) {
-  :root:not([data-theme]) {
-    --primary: #fdd835;
-    --primary-hover: #ffeb3b;
-    --primary-focus: rgba(253, 216, 53, 0.25);
-    --primary-inverse: #101010;
-    --background-color: #101010;
-    --card-background-color: #101010;
-    --h1-color: #fff;
-  }
+  --border: #101010;
 }
 
 [data-theme='dark'] {
@@ -31,4 +20,5 @@
   --background-color: #101010;
   --card-background-color: #101010;
   --h1-color: #fff;
+  --border: #fff;
 }
