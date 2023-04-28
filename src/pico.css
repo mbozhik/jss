@@ -21,4 +21,8 @@
   --card-background-color: #101010;
   --h1-color: #fff;
   --border: #fff;
+  --form-element-background-color: #15151550;
+  --form-element-border-color: #5c5c5c;
+  --form-element-color: #5c5c5c;
+  --modal-overlay-background-color: #15151575;
 }

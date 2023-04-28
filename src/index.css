@@ -48,3 +48,7 @@ a {
 .ITEM h1 {
   color: var(--primary);
 }
+
+input::placeholder {
+  color: var(--form-element-color);
+}

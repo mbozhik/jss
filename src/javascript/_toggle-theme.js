@@ -11,12 +11,9 @@ export function toggleTheme() {
     const moonIcon = document.getElementById('moon-icon')
 
     if (html.dataset.theme === 'dark') {
-      console.log('dark')
       sunIcon.style.display = 'none'
       moonIcon.style.display = 'block'
     } else if (html.dataset.theme === 'light') {
-      console.log('light')
-
       sunIcon.style.display = 'block'
       moonIcon.style.display = 'none'
     }
