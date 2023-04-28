@@ -8,6 +8,7 @@
   --primary-hover: #232323;
   --primary-focus: rgba(117, 117, 117, 0.5);
   --primary-inverse: #fff;
+  --h1-color: #101010;
 }
 
 @media only screen and (prefers-color-scheme: dark) {
@@ -15,9 +16,10 @@
     --primary: #fdd835;
     --primary-hover: #ffeb3b;
     --primary-focus: rgba(253, 216, 53, 0.25);
-    --primary-inverse: rgba(0, 0, 0, 0.75);
+    --primary-inverse: #101010;
     --background-color: #101010;
     --card-background-color: #101010;
+    --h1-color: #fff;
   }
 }
 
@@ -25,7 +27,8 @@
   --primary: #fdd835;
   --primary-hover: #ffeb3b;
   --primary-focus: rgba(253, 216, 53, 0.25);
-  --primary-inverse: rgba(0, 0, 0, 0.75);
+  --primary-inverse: #101010;
   --background-color: #101010;
   --card-background-color: #101010;
+  --h1-color: #fff;
 }

@@ -1,11 +1,27 @@
 export function toggleTheme() {
   const toggleBtn = document.getElementById('THEME_BTN')
   const html = document.querySelector('html')
-  const themes = ['light', 'dark']
 
-  toggleBtn.addEventListener('click', () => {
+  const toggleTheme = () => {
     const currentTheme = html.dataset.theme
     const nextTheme = currentTheme === 'dark' ? 'light' : 'dark'
     html.dataset.theme = nextTheme
-  })
+
+    const sunIcon = document.getElementById('sun-icon')
+    const moonIcon = document.getElementById('moon-icon')
+
+    if (html.dataset.theme === 'dark') {
+      console.log('dark')
+      sunIcon.style.display = 'none'
+      moonIcon.style.display = 'block'
+    } else if (html.dataset.theme === 'light') {
+      console.log('light')
+
+      sunIcon.style.display = 'block'
+      moonIcon.style.display = 'none'
+    }
+  }
+
+  toggleTheme()
+  toggleBtn.addEventListener('click', toggleTheme)
 }

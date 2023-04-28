@@ -9,11 +9,20 @@
   </head>
   <body class="text-black">
     <article id="LOADER" class="m-0 p-0 fixed flex items-center justify-center h-screen w-screen text-white" aria-busy="true"></article>
-    <main class="container p-5">
-      <h2>JavaScript</h2>
-      <div class="flex gap-5">
-        <button class="w-max" id="THEME_BTN">Toggle Theme</button>
-        <button class="outline w-max" id="MODAL_BTN">Launch demo modal</button>
+    <main class="container p-5 text-center">
+      <header class="flex justify-end">
+        <div id="THEME_BTN" class="w-10">
+          <img id="sun-icon" style="display: none" class="cursor-pointer" src="/public/theme-switch/sun.svg" alt="" />
+          <img id="moon-icon" style="display: none" class="cursor-pointer" src="/public/theme-switch/moon.svg" alt="" />
+        </div>
+      </header>
+      <h1 class="text-3xl mt-52 font-semibold">
+        Library of my projects for learning
+        <span>JavaScript</span>
+      </h1>
+      <div class="flex gap-5 items-center justify-center">
+        <button class="w-max text-3xl font-bold">Toggle Theme</button>
+        <button class="outline text-3xl font-semibold w-max" id="MODAL_BTN">Launch demo modal</button>
       </div>
 
       <dialog id="MODAL">

@@ -11,3 +11,7 @@
 [aria-busy='true'] {
   color: var(--primary);
 }
+
+span {
+  color: var(--primary);
+}
