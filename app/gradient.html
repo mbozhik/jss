@@ -1,67 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
-    <title>Get random gradient</title>
-    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
-    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="../public/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="../public/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient generator</title>
   </head>
-  <body class="gradient">
-    <div class="header">
-      <a href="../">
-        <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g id="svgg">
-            <rect id="border" x="1" y="1.75" width="38" height="38" stroke="white" stroke-width="2" />
-            <path
-              id="text"
-              d="M16.9896 19.7299H19.9131V31.1698C19.9078 32.2185 19.6854 33.1215 19.2458 33.8788C18.8062 34.6309 18.1918 35.2109 17.4027 35.6187C16.6188 36.0212 15.7052 36.2224 14.6619 36.2224C13.7085 36.2224 12.8505 36.053 12.0879 35.714C11.3305 35.3697 10.7294 34.8613 10.2845 34.1887C9.83961 33.5161 9.61716 32.6792 9.61716 31.6782H12.5486C12.5539 32.1178 12.6493 32.4965 12.8346 32.8143C13.0253 33.1321 13.2875 33.3757 13.6211 33.5452C13.9548 33.7147 14.3388 33.7994 14.7731 33.7994C15.2444 33.7994 15.6443 33.7014 15.9727 33.5055C16.3011 33.3042 16.55 33.0076 16.7195 32.6157C16.8942 32.2238 16.9843 31.7418 16.9896 31.1698V19.7299ZM31.9528 24.2026C31.8787 23.5088 31.5662 22.9685 31.0154 22.5819C30.4699 22.1953 29.7602 22.002 28.8863 22.002C28.2719 22.002 27.745 22.0947 27.3054 22.28C26.8658 22.4654 26.5295 22.717 26.2964 23.0347C26.0634 23.3525 25.9442 23.7153 25.9389 24.1231C25.9389 24.4621 26.0157 24.756 26.1693 25.005C26.3282 25.2539 26.5427 25.4657 26.8128 25.6405C27.0829 25.81 27.3822 25.953 27.7105 26.0695C28.0389 26.186 28.3699 26.284 28.7036 26.3634L30.2289 26.7448C30.8433 26.8878 31.4338 27.0811 32.0005 27.3247C32.5725 27.5683 33.0836 27.8755 33.5338 28.2463C33.9893 28.617 34.3494 29.0645 34.6142 29.5889C34.879 30.1132 35.0114 30.7276 35.0114 31.432C35.0114 32.3853 34.7678 33.2248 34.2806 33.9503C33.7933 34.6706 33.0889 35.2347 32.1673 35.6425C31.2511 36.045 30.1415 36.2463 28.8386 36.2463C27.5728 36.2463 26.4739 36.0503 25.5417 35.6584C24.6149 35.2665 23.8893 34.6945 23.3649 33.9424C22.8459 33.1903 22.5652 32.2741 22.5228 31.1936H25.4225C25.4649 31.7603 25.6397 32.2317 25.9469 32.6077C26.2541 32.9838 26.6539 33.2645 27.1465 33.4498C27.6443 33.6352 28.2004 33.7279 28.8148 33.7279C29.4557 33.7279 30.0171 33.6326 30.499 33.4419C30.9863 33.2459 31.3676 32.9758 31.643 32.6316C31.9184 32.282 32.0588 31.8742 32.0641 31.4081C32.0588 30.9844 31.9343 30.6349 31.6907 30.3595C31.447 30.0788 31.1054 29.8457 30.6658 29.6604C30.2316 29.4697 29.7231 29.3002 29.1405 29.1519L27.2895 28.6753C25.9495 28.331 24.8903 27.8093 24.1117 27.1102C23.3385 26.4058 22.9518 25.471 22.9518 24.3058C22.9518 23.3472 23.2114 22.5078 23.7304 21.7875C24.2547 21.0672 24.9671 20.5084 25.8674 20.1112C26.7678 19.7087 27.7873 19.5074 28.926 19.5074C30.0806 19.5074 31.0922 19.7087 31.9608 20.1112C32.8347 20.5084 33.5205 21.0619 34.0184 21.7716C34.5162 22.476 34.7731 23.2863 34.789 24.2026H31.9528Z"
-              fill="white"
-            />
-          </g>
-        </svg>
-      </a>
-      <a target="_blank" href="https://github.com/bozzhik/js/blob/main/src/javascript/gradient.js">View code</a>
-    </div>
-    <div class="wrapper">
-      <div class="elements">
-        <h1><span id="changeble">gradient</span> generator</h1>
-        <h2>color: var(--white);</h2>
-        <div class="buttons">
-          <button id="btn" class="outlined">Random gradient</button>
-          <button id="fancy" class="solid">I'm feeling fancy</button>
+  <body class="text-black">
+    <article id="LOADER" class="fixed flex items-center justify-center w-screen h-screen p-0 m-0 text-white" aria-busy="true"></article>
+    <section class="container mt-10">
+      <header class="flex justify-between">
+        <a class="w-12 sm:w-9" href="../">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 750" fill="none"><path class="HEADER_ICONS" fill-rule="evenodd" d="M373.333 746.667 186.667 560 0 373.333l186.667-186.666L373.333 0l99.547 99.557-87.088 87.115L269.5 302.948l584.187-.01-.037 140.786-385.933.011h-198.2l116.27 116.26 87.088 87.114-99.542 99.558Z" clip-rule="evenodd" /></svg>
+        </a>
+        <div class="flex items-center gap-5">
+          <a class="w-12 sm:w-9" href="https://github.com/bozzhik/js/blob/main/app/github.html" target="_blank">
+            <svg viewBox="0 0 612 603" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="HEADER_ICONS" fill-rule="evenodd" clip-rule="evenodd" d="M306.085 0C136.828 0 0 137.958 0 308.632C0 445.06 87.6704 560.544 209.293 601.417C224.498 604.49 230.068 594.776 230.068 586.605C230.068 579.45 229.567 554.925 229.567 529.371C144.422 547.77 126.691 492.58 126.691 492.58C113.007 456.811 92.7328 447.618 92.7328 447.618C64.8647 428.712 94.7628 428.712 94.7628 428.712C125.676 430.756 141.897 460.392 141.897 460.392C169.257 507.398 213.346 494.117 231.083 485.939C233.614 466.011 241.728 452.215 250.343 444.552C182.433 437.397 110.984 410.827 110.984 292.277C110.984 258.553 123.138 230.961 142.398 209.502C139.359 201.839 128.714 170.153 145.443 127.743C145.443 127.743 171.287 119.566 229.561 159.423C254.51 152.668 280.239 149.231 306.085 149.202C331.93 149.202 358.275 152.783 382.603 159.423C440.883 119.566 466.728 127.743 466.728 127.743C483.456 170.153 472.805 201.839 469.766 209.502C489.533 230.961 501.187 258.553 501.187 292.277C501.187 410.827 429.737 436.883 361.32 444.552C372.472 454.259 382.096 472.652 382.096 501.78C382.096 543.167 381.595 576.384 381.595 586.599C381.595 594.776 387.171 604.49 402.37 601.423C523.993 560.537 611.663 445.06 611.663 308.632C612.164 137.958 474.835 0 306.085 0Z" />
+            </svg>
+          </a>
+          <div id="THEME_BTN" class="w-12 sm:w-9">
+            <img id="sun-icon" style="display: none" class="cursor-pointer" src="/public/theme-switch/sun.svg" alt="" />
+            <img id="moon-icon" style="display: none" class="cursor-pointer" src="/public/theme-switch/moon.svg" alt="" />
+          </div>
         </div>
-      </div>
-    </div>
-    <script src="../javascript/gradient.js"></script>
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-      ;(function (m, e, t, r, i, k, a) {
-        m[i] =
-          m[i] ||
-          function () {
-            ;(m[i].a = m[i].a || []).push(arguments)
-          }
-        m[i].l = 1 * new Date()
-        for (var j = 0; j < document.scripts.length; j++) {
-          if (document.scripts[j].src === r) {
-            return
-          }
-        }
-        ;(k = e.createElement(t)), (a = e.getElementsByTagName(t)[0]), (k.async = 1), (k.src = r), a.parentNode.insertBefore(k, a)
-      })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym')
-
-      ym(92306842, 'init', {
-        clickmap: true,
-        trackLinks: true,
-        accurateTrackBounce: true,
-        webvisor: true
-      })
-    </script>
-    <noscript
-      ><div><img src="https://mc.yandex.ru/watch/92306842" style="position: absolute; left: -9999px" alt="" /></div
-    ></noscript>
-    <!-- /Yandex.Metrika counter -->
+      </header>
+      <main class="text-center sm:w-full">
+        <h1 class="mt-32 mb-3 text-7xl sm:text-5xl">
+          GET
+          <span id="CHANGEBLE_GRADIENT">GRADIENT</span>
+        </h1>
+        <h2 class="text-2xl font-normal sm:text-lg">Generate a random gradient or a fancy one</h2>
+        <div class="flex gap-5">
+          <button class="text-3xl font-semibold" id="RANDOM_GENERATE_BTN">Random</button>
+          <button class="text-3xl font-bold outline" id="FANCY_GENERATE_BTN">Fancy</button>
+        </div>
+        <h2 id="INNER_GRADIENT" class="mt-5 text-2xl font-bold underline cursor-pointer sm:text-lg text-grey-500">background: #fdd835;</h2>
+      </main>
+      <!-- <a class="w-20" href="../">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 750" fill="none"><path class="HEADER_ICONS" fill-rule="evenodd" d="M373.333 746.667 186.667 560 0 373.333l186.667-186.666L373.333 0l99.547 99.557-87.088 87.115L269.5 302.948l584.187-.01-.037 140.786-385.933.011h-198.2l116.27 116.26 87.088 87.114-99.542 99.558Z" clip-rule="evenodd" /></svg>
+      </a> -->
+    </section>
+    <script type="module" src="/src/index.js"></script>
+    <script type="module" src="/src/javascript/gradient.js"></script>
   </body>
 </html>

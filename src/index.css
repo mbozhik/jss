@@ -8,7 +8,7 @@
   @apply h-[100svh];
 }
 
-b,
+span#CHANGEBLE_GRADIENT,
 [aria-busy='true'] {
   color: var(--primary);
 }
@@ -51,4 +51,11 @@ a {
 
 input::placeholder {
   color: var(--form-element-color);
+}
+
+.GRADIENT_TEXT {
+  background-size: 100% 100%;
+  background-clip: text;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
 }
