@@ -70,18 +70,20 @@ async function copyInnerGradient() {
 
 innerGradient.addEventListener('click', copyInnerGradient)
 
-function showCopyTooltip(event) {
-  const copyTooltip = document.getElementById('COPY_TOOLTIP')
-  copyTooltip.style.visibility = 'visible'
-  copyTooltip.style.top = event.clientY + 'px'
-  copyTooltip.style.left = event.clientX + 'px'
+if (window.innerWidth > 768) {
+  function showCopyTooltip(event) {
+    const copyTooltip = document.getElementById('COPY_TOOLTIP')
+    copyTooltip.style.visibility = 'visible'
+    copyTooltip.style.top = event.clientY + 'px'
+    copyTooltip.style.left = event.clientX + 'px'
 
-  function hideCopyTooltip() {
-    document.removeEventListener('mousemove', showCopyTooltip)
-    copyTooltip.style.visibility = 'hidden'
+    function hideCopyTooltip() {
+      document.removeEventListener('mousemove', showCopyTooltip)
+      copyTooltip.style.visibility = 'hidden'
+    }
+
+    innerGradient.addEventListener('mouseleave', hideCopyTooltip, {once: true})
+    document.addEventListener('mousemove', showCopyTooltip)
   }
-
-  innerGradient.addEventListener('mouseleave', hideCopyTooltip, {once: true})
-  document.addEventListener('mousemove', showCopyTooltip)
+  innerGradient.addEventListener('mouseenter', showCopyTooltip)
 }
-innerGradient.addEventListener('mouseenter', showCopyTooltip)

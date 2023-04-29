@@ -7,7 +7,7 @@
 #LOADER {
   @apply h-[100svh];
 }
-span#CHANGEBLE_GRADIENT,
+span,
 [aria-busy='true'] {
   color: var(--primary);
 }
