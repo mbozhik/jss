@@ -13,8 +13,9 @@ b,
   color: var(--primary);
 }
 
-.GITHUB_LOGO {
+.HEADER_ICONS {
   fill: var(--primary);
+  overflow: visible;
 }
 
 .ITEMS_GRID {
@@ -38,7 +39,6 @@ b,
 
 a {
   color: var(--border);
-  text-decoration-style: none;
 }
 
 .ITEM:hover {
