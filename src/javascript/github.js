@@ -1,5 +1,5 @@
 const form = document.getElementById('GITHUB_API_SEARCH')
-const button = document.getElementById('githubApiButton')
+const button = document.getElementById('GITHUB_API_BUTTON')
 const dialog = document.getElementById('MODAL')
 const nameElem = document.getElementById('name')
 const bioElem = document.getElementById('bio')
