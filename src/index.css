@@ -8,7 +8,8 @@
   @apply h-[100svh];
 }
 span,
-[aria-busy='true'] {
+[aria-busy='true'],
+#description {
   color: var(--primary);
 }
 .HEADER_ICONS {
@@ -66,13 +67,11 @@ input::placeholder {
   left: 50%;
   bottom: 30px;
 }
-
 .show {
   visibility: visible !important;
   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
-
 @keyframes fadein {
   from {
     bottom: 0;
@@ -83,7 +82,6 @@ input::placeholder {
     opacity: 1;
   }
 }
-
 @keyframes fadeout {
   from {
     bottom: 30px;
@@ -93,4 +91,12 @@ input::placeholder {
     bottom: 0;
     opacity: 0;
   }
+}
+.question {
+  opacity: 0;
+  margin: 2rem 0 0;
+  margin-bottom: 0rem;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(2.5vw);
 }

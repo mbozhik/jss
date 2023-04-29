@@ -9,6 +9,7 @@
   --primary-focus: rgba(117, 117, 117, 0.5);
   --primary-inverse: #fff;
   --h1-color: #101010;
+  --h6-color: #101010;
   --border: #101010;
 }
 
@@ -20,6 +21,7 @@
   --background-color: #101010;
   --card-background-color: #101010;
   --h1-color: #fff;
+  --h6-color: #fff;
   --border: #fff;
   --form-element-background-color: #15151550;
   --form-element-border-color: #5c5c5c;
