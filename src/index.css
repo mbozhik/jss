@@ -7,52 +7,45 @@
 #LOADER {
   @apply h-[100svh];
 }
-
 span#CHANGEBLE_GRADIENT,
 [aria-busy='true'] {
   color: var(--primary);
 }
-
 .HEADER_ICONS {
   fill: var(--primary);
   overflow: visible;
 }
-
 .ITEMS_GRID {
   column-gap: 1rem;
   row-gap: 1rem;
 }
-
 @media screen and (max-width: 1366px) {
   .ITEMS_GRID {
     column-gap: 5rem;
     row-gap: 5rem;
   }
 }
-
 @media screen and (max-width: 768px) {
   .ITEMS_GRID {
     column-gap: 2rem;
     row-gap: 2rem;
   }
 }
-
 a {
   color: var(--border);
 }
-
+a#TIP_GRADIENT {
+  color: var(--primary);
+}
 .ITEM:hover {
   border-color: var(--primary);
 }
-
 .ITEM h1 {
   color: var(--primary);
 }
-
 input::placeholder {
   color: var(--form-element-color);
 }
-
 .GRADIENT_TEXT {
   background-size: 100% 100%;
   background-clip: text;
@@ -63,4 +56,41 @@ input::placeholder {
 #COPY_TOOLTIP {
   background-color: var(--primary);
   color: var(--background-color);
+}
+
+#COPY_SNACKBAR {
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: var(--primary);
+  color: var(--background-color);
+  left: 50%;
+  bottom: 30px;
+}
+
+.show {
+  visibility: visible !important;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
 }

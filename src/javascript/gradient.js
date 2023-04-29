@@ -28,7 +28,6 @@ randomBtn.addEventListener('click', onRandomBtn)
 
 //  Fancy button
 let fancyCounter = 0
-
 function getFancyGradient() {
   const gradients = ['linear-gradient(90deg, #A020DF 0%, #D721BF 0.01%, #0469E2 100%)', 'linear-gradient(90deg, #6A6EFF 0%, #F6AEFE 100%)', 'linear-gradient(90deg, #FF950C 0%, #FEF861 100%)', 'linear-gradient(90deg, #02EF2D 0%, #01F032 0.01%, #E3E518 100%)', 'linear-gradient(90deg, #505ADD 0%, #804FD0 30.64%, #BC40BF 65%, #F4A033 100%)', 'linear-gradient(90deg, #EF1478 0%, #E61479 0.01%, #8321EA 100%)', 'linear-gradient(90deg, #ED7373 0%, #EE0E86 100%)', 'linear-gradient(90deg, #15FAFE 0%, #31BAFE 30.64%, #665AFD 65%, #9D09FF 100%)', 'linear-gradient(90deg, #D54AFF 0%, #7103EF 100%)', 'linear-gradient(90deg, #15B5E9 0%, #10F75D 100%)', 'linear-gradient(90deg, #F7C837 0%, #F14A75 100%)']
   const currentIndex = fancyCounter
@@ -47,13 +46,25 @@ function onFancyBtn() {
 }
 fancyBtn.addEventListener('click', onFancyBtn)
 
-//  Copy text content:
+// Copy functionality
+
+function snackBar(textSnackbar, timeout) {
+  const snackBar = document.getElementById('COPY_SNACKBAR')
+  snackBar.innerHTML = textSnackbar
+  snackBar.classList.remove('show')
+  void snackBar.offsetWidth
+  snackBar.classList.add('show')
+  setTimeout(() => snackBar.classList.remove('show'), timeout)
+}
+
+//  Copy text content
+
 async function copyInnerGradient() {
   try {
     await navigator.clipboard.writeText(innerGradient.innerHTML)
-    alert('Gradient copied!')
+    snackBar('Gradient copied', 3000)
   } catch (err) {
-    alert('Error! Copy it yourself :(')
+    snackBar('Error! Copy it yourself', 3000)
   }
 }
 
