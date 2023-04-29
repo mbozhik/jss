@@ -20,8 +20,7 @@ module.exports = {
     },
     screens: {
       sm: {max: '768px'},
-      lg: {max: '1024px'},
-      xl: {max: '1440px'},
+      xl: {max: '1660px', min: '769px'},
     },
     debugScreens: {
       position: ['top', 'right'],
