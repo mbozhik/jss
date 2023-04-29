@@ -46,3 +46,31 @@ function onFancyBtn() {
   innerGradient.innerHTML = `background: ${newGradient};`
 }
 fancyBtn.addEventListener('click', onFancyBtn)
+
+//  Copy text content:
+async function copyInnerGradient() {
+  try {
+    await navigator.clipboard.writeText(innerGradient.innerHTML)
+    alert('Gradient copied!')
+  } catch (err) {
+    alert('Error! Copy it yourself :(')
+  }
+}
+
+innerGradient.addEventListener('click', copyInnerGradient)
+
+function showCopyTooltip(event) {
+  const copyTooltip = document.getElementById('COPY_TOOLTIP')
+  copyTooltip.style.visibility = 'visible'
+  copyTooltip.style.top = event.clientY + 'px'
+  copyTooltip.style.left = event.clientX + 'px'
+
+  function hideCopyTooltip() {
+    document.removeEventListener('mousemove', showCopyTooltip)
+    copyTooltip.style.visibility = 'hidden'
+  }
+
+  innerGradient.addEventListener('mouseleave', hideCopyTooltip, {once: true})
+  document.addEventListener('mousemove', showCopyTooltip)
+}
+innerGradient.addEventListener('mouseenter', showCopyTooltip)

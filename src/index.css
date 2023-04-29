@@ -59,3 +59,8 @@ input::placeholder {
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent;
 }
+
+#COPY_TOOLTIP {
+  background-color: var(--primary);
+  color: var(--background-color);
+}
