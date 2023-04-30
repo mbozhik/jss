@@ -1,7 +1,9 @@
+import fs from 'fs'
 import {resolve} from 'path'
 import {defineConfig} from 'vite'
+
 import {qrcode} from 'vite-plugin-qrcode'
-import fs from 'fs'
+import vitePluginPartial from 'vite-plugin-partial'
 
 // Get all HTML files in the /app folder
 const htmlFiles = fs
@@ -11,7 +13,7 @@ const htmlFiles = fs
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [qrcode()],
+  plugins: [qrcode(), vitePluginPartial.default()],
   build: {
     outDir: 'docs',
     assetsDir: 'assets',

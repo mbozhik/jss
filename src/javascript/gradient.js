@@ -1,3 +1,5 @@
+import {snackBar} from '../javascript/_snack-bar'
+
 const randomBtn = document.getElementById('RANDOM_GENERATE_BTN')
 const fancyBtn = document.getElementById('FANCY_GENERATE_BTN')
 const changeble = document.getElementById('CHANGEBLE_GRADIENT')
@@ -45,17 +47,6 @@ function onFancyBtn() {
   innerGradient.innerHTML = `background: ${newGradient};`
 }
 fancyBtn.addEventListener('click', onFancyBtn)
-
-// Copy functionality
-
-function snackBar(textSnackbar, timeout) {
-  const snackBar = document.getElementById('COPY_SNACKBAR')
-  snackBar.innerHTML = textSnackbar
-  snackBar.classList.remove('show')
-  void snackBar.offsetWidth
-  snackBar.classList.add('show')
-  setTimeout(() => snackBar.classList.remove('show'), timeout)
-}
 
 //  Copy text content
 
