@@ -5,9 +5,9 @@ import fs from 'fs'
 
 // Get all HTML files in the /app folder
 const htmlFiles = fs
-  .readdirSync('app/')
+  .readdirSync('project/')
   .filter((filename) => filename.endsWith('.html'))
-  .map((filename) => `app/${filename}`)
+  .map((filename) => `project/${filename}`)
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -24,7 +24,7 @@ export default defineConfig({
         ...htmlFiles.reduce(
           (obj, file) => ({
             ...obj,
-            [file.replace('app/', '').replace('.html', '')]: resolve(__dirname, file),
+            [file.replace('project/', '').replace('.html', '')]: resolve(__dirname, file),
           }),
           {},
         ),
