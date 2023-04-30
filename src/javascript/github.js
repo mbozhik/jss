@@ -89,16 +89,20 @@ form.addEventListener('submit', async (event) => {
     if (created_at === null) {
       createdElem.textContent = ''
     } else {
-      createdElem.textContent = `Created at: ${created_at}`
+      const createdDate = new Date(created_at)
+      const createdDateString = createdDate.toLocaleString()
+      createdElem.textContent = `Created at: ${createdDateString}`
     }
 
     if (updated_at === null) {
       updatedElem.textContent = ''
     } else {
-      updatedElem.textContent = `Updated at: ${updated_at}`
+      const updatedDate = new Date(updated_at)
+      const updatedDateString = updatedDate.toLocaleString()
+      updatedElem.textContent = `Updated at: ${updatedDateString}`
     }
 
-    setTimeout(() => dialog.showModal(), 500)
+    setTimeout(() => dialog.showModal(), 100)
   } else {
     snackBar('Error! User not found', 3000)
   }
