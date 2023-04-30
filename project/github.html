@@ -35,17 +35,23 @@
         <input type="text" id="nickname" name="nickname" placeholder="Nickname" required />
         <button id="GITHUB_API_BUTTON" type="submit">Search</button>
       </form>
+      <vite-partial src="../src/partials/snack-bar.html" />
       <dialog id="MODAL">
-        <article class="overflow-hidden">
+        <article id="MODAL_WINDOW">
           <a href="#close" aria-label="Close" class="close"></a>
           <h3>User Profile</h3>
-          <img style="margin-bottom: 1.5rem" id="avatar" src="" alt="User Avatar" />
+          <img class="mb-6" id="avatar" src="" alt="User Avatar" />
+          <a target="_blank" class="mb-6 block" id="link" href=""></a>
           <p id="name"></p>
           <p id="bio"></p>
+          <p id="company"></p>
           <p id="location"></p>
           <p id="public-repos"></p>
+          <p id="public-gists"></p>
           <p id="followers"></p>
           <p id="following"></p>
+          <p id="created"></p>
+          <p id="updated"></p>
         </article>
       </dialog>
     </main>
