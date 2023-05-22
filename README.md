@@ -1,1 +1,1 @@
-# JS
+# javascript mini-projects archieve
